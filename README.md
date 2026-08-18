@@ -1,21 +1,32 @@
-Objetivo: Implementação completa de algoritmos fundamentais de Álgebra Linear sem dependência de bibliotecas matemáticas avançadas.
+# Algebra Linear Toolset
 
-1 - Algoritmos implementados
-Gaussian Elimination
-Gauss-Jordan Elimination
-RREF
-Determinant
-Matrix Inverse
-Rank
-Nullity
-Transpose
-Tecnologias
-Python 3.12
-C++17 (opcional)
-PyTest
-2 - Conceitos Matemáticos Demonstrados
-Sistemas Lineares
-Espaços Vetoriais
-Álgebra Matricial
-Teorema Rank-Nullity
-Eliminação Gaussiana
+Ferramenta educativa completa de **Álgebra Linear** desenvolvida em Python puro (sem dependências obrigatórias) e com suporte opcional a NumPy.
+
+Este repositório foi criado para demonstrar compreensão sólida dos conceitos fundamentais de Álgebra Linear e a sua implementação computacional.
+
+## Objetivos
+
+- Implementar operações com vetores e matrizes do zero
+- Resolver sistemas de equações lineares (Eliminação de Gauss e Gauss-Jordan)
+- Calcular determinantes e matrizes inversas
+- Calcular valores e vetores próprios
+- Fornecer documentação clara e exemplos práticos
+
+## Estrutura
+
+| Pasta / Ficheiro       | Conteúdo                                      |
+|------------------------|-----------------------------------------------|
+| `src/`                 | Implementações principais                     |
+| `docs/`                | Explicações teóricas                          |
+| `examples/`            | Exemplos de utilização                        |
+| `requirements.txt`     | Dependências opcionais                        |
+
+## Instalação
+
+```bash
+# Clonar o repositório
+git clone https://github.com/TEU_USER/algebra-linear-toolset.git
+cd algebra-linear-toolset
+
+# (Opcional) Instalar NumPy para comparações
+pip install -r requirements.txt
