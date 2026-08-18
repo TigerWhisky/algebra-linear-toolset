@@ -1,0 +1,21 @@
+from src.matrix import Matrix
+from src.vector import Vector
+from src.systems import solve_system, gauss_jordan
+
+A = Matrix([
+    [2, 1, -1],
+    [-3, -1, 2],
+    [-2, 1, 2]
+])
+b = Vector([8, -11, -3])
+
+print("Sistema: Ax = b")
+print("A =")
+print(A)
+print("b =", b)
+
+x = solve_system(A, b)
+print("\nSolução (Gauss) =", x)
+
+x2 = gauss_jordan(A, b)
+print("Solução (Gauss-Jordan) =", x2)
