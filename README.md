@@ -30,3 +30,52 @@ cd algebra-linear-toolset
 
 # (Opcional) Instalar NumPy para comparações
 pip install -r requirements.txt
+
+#Utilização Rápida
+
+Pythonfrom src.vector import Vector
+from src.matrix import Matrix
+from src.systems import solve_system
+from src.determinants import determinant
+from src.eigenvalues import power_method
+
+# Vetores
+v1 = Vector([1, 2, 3])
+v2 = Vector([4, 5, 6])
+print(v1 + v2)
+print(v1.dot(v2))
+
+# Matrizes
+A = Matrix([
+    [2, 1, 1],
+    [1, 3, 2],
+    [1, 0, 0]
+])
+print(A.transpose())
+print(A * A)
+
+# Sistema linear
+b = Vector([1, 2, 3])
+x = solve_system(A, b)
+print(x)
+
+Conceitos Implementados
+Vetores (soma, produto escalar, norma, ângulo)
+Matrizes (soma, multiplicação, transposta, potência)
+Eliminação de Gauss e Gauss-Jordan
+Determinante (método de Laplace e eliminação)
+Matriz inversa
+Valores e vetores próprios (método da potência)
+
+# Acrescentada uma secção de tests 
+
+O projeto inclui uma bateria completa de testes unitários.
+
+# Instalar dependências de teste
+pip install -r requirements.txt
+
+# Correr todos os testes
+pytest
+
+# Correr com mais detalhe
+pytest -v
